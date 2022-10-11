@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/netboox/static/css/main.f40f3687.css",
+    "main.js": "/netboox/static/js/main.d954fef5.js",
+    "index.html": "/netboox/index.html",
+    "main.f40f3687.css.map": "/netboox/static/css/main.f40f3687.css.map",
+    "main.d954fef5.js.map": "/netboox/static/js/main.d954fef5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f40f3687.css",
+    "static/js/main.d954fef5.js"
+  ]
+}
