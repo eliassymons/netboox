@@ -1,0 +1,236 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+$red: #e50914;
+$grey: #2e2c2c;
+$white: #ffffff;
+body {
+  background-color: $grey;
+}
+h1,
+h2 {
+  font-family: "Bebas Neue", cursive;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-brand {
+  font-family: "Bebas Neue", cursive;
+  margin-right: 4rem;
+  font-size: 3rem;
+  color: $red;
+}
+.nav-link {
+  color: $white;
+  text-decoration: none;
+}
+
+.hero {
+  width: 100vw;
+  min-height: 70vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+  .hero-info {
+    max-width: 25rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-img {
+    width: 15rem;
+  }
+
+  h1 {
+    font-size: calc(4rem + 1vw);
+    color: $red;
+  }
+  h2 {
+    font-size: calc(2rem + 1vw);
+    color: $white;
+  }
+  p {
+    font-size: calc(0.8rem + 0.7vw);
+  }
+  .btn-secondary {
+    max-width: 12rem;
+  }
+}
+
+.slider-container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 4rem;
+
+  .category {
+    position: relative;
+    transition: 150ms all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+  }
+  .slider-img {
+    max-width: 13rem;
+    min-width: 13rem;
+    border-radius: 0.7rem;
+  }
+  .title-info {
+    text-align: center;
+    font-size: 0.4rem;
+  }
+  .btn-container {
+    width: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  .book-info {
+    position: absolute;
+    top: 0.5rem;
+    color: white;
+    height: 100%;
+
+    padding: 0.7rem;
+    cursor: pointer;
+    display: none;
+    .desc {
+      font-size: 0.8rem;
+    }
+  }
+}
+.category:hover .book-info {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.category:hover .slider-img {
+  filter: brightness(24%);
+  -webkit-filter: brightness(24%);
+  -moz-filter: brightness(24%);
+}
+.category:hover {
+  scale: 1.1;
+}
+
+.fiction-container,
+.nonfiction-container,
+.children-container,
+.business-container,
+.young-adult-container,
+.graphic-novels-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  color: $white;
+}
+
+.my-list {
+  width: 100vw;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  .list-img {
+    height: 9rem;
+  }
+  .list-title {
+    text-align: center;
+    color: $white;
+  }
+  .list-item {
+    max-width: 60rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+  }
+  .list-item-info {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $white;
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+.empty-list {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  .btn-outline-secondary {
+    width: 12rem;
+  }
+  h3 {
+    color: $white;
+  }
+}
+
+.clear-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.badge {
+  margin-left: 0.2rem;
+}
+
+.about-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  p {
+    min-width: 40vw;
+    width: 20rem;
+    text-indent: 2rem;
+  }
+}
